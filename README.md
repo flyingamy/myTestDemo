@@ -1,2 +1,0 @@
-# myTestDemo
-android test demo
