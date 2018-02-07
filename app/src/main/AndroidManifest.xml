@@ -10,6 +10,11 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <!-- 基础模块 END -->
     <application
         android:name=".myTestDemo"
@@ -34,7 +39,14 @@
             android:label="@string/title_activity_show_all_recs"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".DetailActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".ShareActivity"
+            android:label="@string/title_activity_share" />
+        <activity android:name=".InputLinkActivity"></activity>
     </application>
 
 </manifest>

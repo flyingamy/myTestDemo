@@ -35,23 +35,23 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-/*                if (item.getItemId() == R.id.action_logout) {
+                if (item.getItemId() == R.id.action_logout) {
                     AVUser.getCurrentUser().logOut();
                     startActivity(new Intent(MainActivity.this, LoginActivity.class));
                     MainActivity.this.finish();
-                }*/
+                }
                 return false;
             }
         });
 
-/*        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, PublishActivity.class));
+                startActivity(new Intent(MainActivity.this, InputLinkActivity.class));
             }
         });
-*/
+
         mRecyclerView = (RecyclerView) findViewById(R.id.list_main);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
